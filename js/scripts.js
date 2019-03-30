@@ -3,9 +3,9 @@ $(document).ready(function(){
 	$( "#form" ).submit(function( event ) {
 	  	event.preventDefault();
 
-	  	var firstname = $(this).find('[name=firstname]').val(); 
-	  	var secondname = $(this).find('[name=secondname]').val(); 
-	  	var phonenumber = $(this).find('[name=phonenumber]').val(); 
+	  	var firstname = $(this).find('[name=name1]').val(); 
+	  	var secondname = $(this).find('[name=name2]').val(); 
+	  	var phonenumber = $(this).find('[name=contact]').val(); 
 	  	var email = $(this).find('[name=email]').val(); 
 
 		/*
@@ -18,7 +18,9 @@ $(document).ready(function(){
 
 	  	let url = 'https://outboxedu-contacts.herokuapp.com/add'
 
-	  	alert(`${url}`);
+	  	alert('New user added as: \nFirst name:' + firstname + '\nSecond name: ' + secondname + '\nPhone number: ' + phonenumber + '\nEmail: ' + email);
+
+	  	window.location.href = "index.html"
 	});
 
 });
