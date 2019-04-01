@@ -23,12 +23,14 @@
                 </div>
                 <div class="card-body">
                   <div class="col-lg-12">
-                    <a href="contact.html" class="float-right btn btn-sm btn-primary">Add User</a>
-                    <h3 class="pull-left" class="float-left">Fill in where possible!</h3>
+                    <a href="contact.html" class="float-right btn btn-sm btn-primary" style="margin: 2px;">Add User</a>
+                    <a href="#" class="btn btn-sm btn-info float-right" id="retrieve-resources" style="margin: 2px;">Retrieve List</a>
+                    <h4>Here is the list of all users!</h4>
+                    <div id="display-resources"></div>
                     <br>
                   </div>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="display-resources">
                       <table class="table table-striped">
                         <thead>
                           <tr>
@@ -40,11 +42,8 @@
                         </thead>
                         <tbody id="table-content">
                           <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                          </tr
+                            <td colspan="4" class="text-center"><i>No user found</i></td>
+                          </tr>
                         </tbody>
                       </table>
                     </div>
